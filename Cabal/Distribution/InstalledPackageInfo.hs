@@ -52,7 +52,8 @@ import Distribution.FieldGrammar
 import Distribution.FieldGrammar.FieldDescrs
 import Distribution.ModuleName
 import Distribution.Package                  hiding (installedPackageId, installedUnitId)
-import Distribution.ParseUtils
+import Distribution.ParseUtils               hiding (showFields)
+import Distribution.Pretty.Field             (showFields)
 import Distribution.Types.ComponentName
 import Distribution.Types.LibraryName
 import Distribution.Utils.Generic            (toUTF8BS)
@@ -133,7 +134,7 @@ showInstalledPackageInfo ipi =
 
 -- | The variant of 'showInstalledPackageInfo' which outputs @pkgroot@ field too.
 showFullInstalledPackageInfo :: InstalledPackageInfo -> String
-showFullInstalledPackageInfo = Disp.render . (Disp.$+$ Disp.text "") . prettyFieldGrammar ipiFieldGrammar
+showFullInstalledPackageInfo = showFields . prettyFieldGrammar ipiFieldGrammar
 
 -- |
 --
