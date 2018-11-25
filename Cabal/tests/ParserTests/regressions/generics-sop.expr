@@ -38,7 +38,7 @@ GenericPackageDescription
                                                                                                          defaultExtensions = [],
                                                                                                          defaultLanguage = Nothing,
                                                                                                          extraBundledLibs = [],
-													 extraDynLibFlavours = [],
+                                                                                                         extraDynLibFlavours = [],
                                                                                                          extraFrameworkDirs = [],
                                                                                                          extraGHCiLibs = [],
                                                                                                          extraLibDirs = [],
@@ -53,14 +53,22 @@ GenericPackageDescription
                                                                                                          ldOptions = [],
                                                                                                          mixins = [],
                                                                                                          oldExtensions = [],
-                                                                                                         options = [],
+                                                                                                         options = PerCompilerFlavor
+                                                                                                                     []
+                                                                                                                     [],
                                                                                                          otherExtensions = [],
                                                                                                          otherLanguages = [],
                                                                                                          otherModules = [],
                                                                                                          pkgconfigDepends = [],
-                                                                                                         profOptions = [],
-                                                                                                         sharedOptions = [],
-                                                                                                         staticOptions = [],
+                                                                                                         profOptions = PerCompilerFlavor
+                                                                                                                         []
+                                                                                                                         [],
+                                                                                                         sharedOptions = PerCompilerFlavor
+                                                                                                                           []
+                                                                                                                           [],
+                                                                                                         staticOptions = PerCompilerFlavor
+                                                                                                                           []
+                                                                                                                           [],
                                                                                                          targetBuildDepends = [Dependency
                                                                                                                                  `PackageName "tagged"`
                                                                                                                                  (IntersectVersionRanges
@@ -118,7 +126,7 @@ GenericPackageDescription
                                                                                                          defaultExtensions = [],
                                                                                                          defaultLanguage = Nothing,
                                                                                                          extraBundledLibs = [],
-													 extraDynLibFlavours = [],
+                                                                                                         extraDynLibFlavours = [],
                                                                                                          extraFrameworkDirs = [],
                                                                                                          extraGHCiLibs = [],
                                                                                                          extraLibDirs = [],
@@ -133,14 +141,22 @@ GenericPackageDescription
                                                                                                          ldOptions = [],
                                                                                                          mixins = [],
                                                                                                          oldExtensions = [],
-                                                                                                         options = [],
+                                                                                                         options = PerCompilerFlavor
+                                                                                                                     []
+                                                                                                                     [],
                                                                                                          otherExtensions = [],
                                                                                                          otherLanguages = [],
                                                                                                          otherModules = [],
                                                                                                          pkgconfigDepends = [],
-                                                                                                         profOptions = [],
-                                                                                                         sharedOptions = [],
-                                                                                                         staticOptions = [],
+                                                                                                         profOptions = PerCompilerFlavor
+                                                                                                                         []
+                                                                                                                         [],
+                                                                                                         sharedOptions = PerCompilerFlavor
+                                                                                                                           []
+                                                                                                                           [],
+                                                                                                         staticOptions = PerCompilerFlavor
+                                                                                                                           []
+                                                                                                                           [],
                                                                                                          targetBuildDepends = [Dependency
                                                                                                                                  `PackageName "transformers-compat"`
                                                                                                                                  (IntersectVersionRanges
@@ -191,7 +207,7 @@ GenericPackageDescription
                                                                                                                                 AutoDeriveTypeable],
                                                                                                          defaultLanguage = Nothing,
                                                                                                          extraBundledLibs = [],
-													 extraDynLibFlavours = [],
+                                                                                                         extraDynLibFlavours = [],
                                                                                                          extraFrameworkDirs = [],
                                                                                                          extraGHCiLibs = [],
                                                                                                          extraLibDirs = [],
@@ -206,14 +222,22 @@ GenericPackageDescription
                                                                                                          ldOptions = [],
                                                                                                          mixins = [],
                                                                                                          oldExtensions = [],
-                                                                                                         options = [],
+                                                                                                         options = PerCompilerFlavor
+                                                                                                                     []
+                                                                                                                     [],
                                                                                                          otherExtensions = [],
                                                                                                          otherLanguages = [],
                                                                                                          otherModules = [],
                                                                                                          pkgconfigDepends = [],
-                                                                                                         profOptions = [],
-                                                                                                         sharedOptions = [],
-                                                                                                         staticOptions = [],
+                                                                                                         profOptions = PerCompilerFlavor
+                                                                                                                         []
+                                                                                                                         [],
+                                                                                                         sharedOptions = PerCompilerFlavor
+                                                                                                                           []
+                                                                                                                           [],
+                                                                                                         staticOptions = PerCompilerFlavor
+                                                                                                                           []
+                                                                                                                           [],
                                                                                                          targetBuildDepends = [],
                                                                                                          virtualModules = []},
                                                                                        libExposed = True,
@@ -246,7 +270,7 @@ GenericPackageDescription
                                                                                                          defaultExtensions = [],
                                                                                                          defaultLanguage = Nothing,
                                                                                                          extraBundledLibs = [],
-													 extraDynLibFlavours = [],
+                                                                                                         extraDynLibFlavours = [],
                                                                                                          extraFrameworkDirs = [],
                                                                                                          extraGHCiLibs = [],
                                                                                                          extraLibDirs = [],
@@ -261,15 +285,23 @@ GenericPackageDescription
                                                                                                          ldOptions = [],
                                                                                                          mixins = [],
                                                                                                          oldExtensions = [],
-                                                                                                         options = [],
+                                                                                                         options = PerCompilerFlavor
+                                                                                                                     []
+                                                                                                                     [],
                                                                                                          otherExtensions = [EnableExtension
                                                                                                                               OverlappingInstances],
                                                                                                          otherLanguages = [],
                                                                                                          otherModules = [],
                                                                                                          pkgconfigDepends = [],
-                                                                                                         profOptions = [],
-                                                                                                         sharedOptions = [],
-                                                                                                         staticOptions = [],
+                                                                                                         profOptions = PerCompilerFlavor
+                                                                                                                         []
+                                                                                                                         [],
+                                                                                                         sharedOptions = PerCompilerFlavor
+                                                                                                                           []
+                                                                                                                           [],
+                                                                                                         staticOptions = PerCompilerFlavor
+                                                                                                                           []
+                                                                                                                           [],
                                                                                                          targetBuildDepends = [],
                                                                                                          virtualModules = []},
                                                                                        libExposed = True,
@@ -367,7 +399,7 @@ GenericPackageDescription
                                                                                  FunctionalDependencies],
                                                           defaultLanguage = Just Haskell2010,
                                                           extraBundledLibs = [],
-							  extraDynLibFlavours = [],
+                                                          extraDynLibFlavours = [],
                                                           extraFrameworkDirs = [],
                                                           extraGHCiLibs = [],
                                                           extraLibDirs = [],
@@ -382,7 +414,7 @@ GenericPackageDescription
                                                           ldOptions = [],
                                                           mixins = [],
                                                           oldExtensions = [],
-                                                          options = [_×_ GHC ["-Wall"]],
+                                                          options = PerCompilerFlavor ["-Wall"] [],
                                                           otherExtensions = [EnableExtension
                                                                                OverloadedStrings,
                                                                              EnableExtension
@@ -398,9 +430,9 @@ GenericPackageDescription
                                                           otherLanguages = [],
                                                           otherModules = [],
                                                           pkgconfigDepends = [],
-                                                          profOptions = [],
-                                                          sharedOptions = [],
-                                                          staticOptions = [],
+                                                          profOptions = PerCompilerFlavor [] [],
+                                                          sharedOptions = PerCompilerFlavor [] [],
+                                                          staticOptions = PerCompilerFlavor [] [],
                                                           targetBuildDepends = [Dependency
                                                                                   `PackageName "base"`
                                                                                   (IntersectVersionRanges
@@ -478,7 +510,7 @@ GenericPackageDescription
                                                                defaultExtensions = [],
                                                                defaultLanguage = Just Haskell2010,
                                                                extraBundledLibs = [],
-							       extraDynLibFlavours = [],
+                                                               extraDynLibFlavours = [],
                                                                extraFrameworkDirs = [],
                                                                extraGHCiLibs = [],
                                                                extraLibDirs = [],
@@ -493,16 +525,19 @@ GenericPackageDescription
                                                                ldOptions = [],
                                                                mixins = [],
                                                                oldExtensions = [],
-                                                               options = [_×_
-                                                                            GHC
-                                                                            ["-Wall", "-threaded"]],
+                                                               options = PerCompilerFlavor
+                                                                           ["-Wall", "-threaded"]
+                                                                           [],
                                                                otherExtensions = [],
                                                                otherLanguages = [],
                                                                otherModules = [],
                                                                pkgconfigDepends = [],
-                                                               profOptions = [],
-                                                               sharedOptions = [],
-                                                               staticOptions = [],
+                                                               profOptions = PerCompilerFlavor
+                                                                               [] [],
+                                                               sharedOptions = PerCompilerFlavor
+                                                                                 [] [],
+                                                               staticOptions = PerCompilerFlavor
+                                                                                 [] [],
                                                                targetBuildDepends = [Dependency
                                                                                        `PackageName "base"`
                                                                                        AnyVersion
@@ -554,7 +589,7 @@ GenericPackageDescription
                                                                defaultExtensions = [],
                                                                defaultLanguage = Just Haskell2010,
                                                                extraBundledLibs = [],
-							       extraDynLibFlavours = [],
+                                                               extraDynLibFlavours = [],
                                                                extraFrameworkDirs = [],
                                                                extraGHCiLibs = [],
                                                                extraLibDirs = [],
@@ -569,14 +604,18 @@ GenericPackageDescription
                                                                ldOptions = [],
                                                                mixins = [],
                                                                oldExtensions = [],
-                                                               options = [_×_ GHC ["-Wall"]],
+                                                               options = PerCompilerFlavor
+                                                                           ["-Wall"] [],
                                                                otherExtensions = [],
                                                                otherLanguages = [],
                                                                otherModules = [`ModuleName ["HTransExample"]`],
                                                                pkgconfigDepends = [],
-                                                               profOptions = [],
-                                                               sharedOptions = [],
-                                                               staticOptions = [],
+                                                               profOptions = PerCompilerFlavor
+                                                                               [] [],
+                                                               sharedOptions = PerCompilerFlavor
+                                                                                 [] [],
+                                                               staticOptions = PerCompilerFlavor
+                                                                                 [] [],
                                                                targetBuildDepends = [Dependency
                                                                                        `PackageName "base"`
                                                                                        (IntersectVersionRanges
