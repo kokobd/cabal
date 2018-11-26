@@ -168,10 +168,10 @@ timed $CABALNEWBUILD cabal-testsuite --enable-tests --disable-benchmarks --dry-r
 timed $CABALNEWBUILD cabal-testsuite --enable-tests --disable-benchmarks --dep || exit 1
 timed $CABALNEWBUILD cabal-testsuite --enable-tests --disable-benchmarks || exit 1
 
-
 if $CABALSUITETESTS; then
 echo "$CYAN=== cabal-testsuite: Cabal test ======================== $(date +%T) === $RESET"
 
+rm -rf .ghc.environment.*
 CMD="$($CABALPLAN list-bin cabal-testsuite:exe:cabal-tests) --builddir=$CABAL_TESTSUITE_BDIR $TESTSUITEJOBS --hide-successes"
 (cd cabal-testsuite && timed $CMD) || echo "to rerun cabal-tests: $CMD" && exit 1
 
