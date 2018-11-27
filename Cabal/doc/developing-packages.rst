@@ -2163,7 +2163,8 @@ system-dependent values for these fields.
     :pkg-field:`other-extensions` declarations.
 
 .. pkg-field:: extensions: identifier list
-   :deprecated:
+   :deprecated: 1.12
+   :removed: 3.0
 
    Deprecated in favor of :pkg-field:`default-extensions`.
 
@@ -2220,7 +2221,8 @@ system-dependent values for these fields.
       compatibility.
 
 .. pkg-field:: build-tools: program list
-    :deprecated:
+    :deprecated: 2.0
+    :removed: 3.0
 
     Deprecated in favor of :pkg-field:`build-tool-depends`, but :ref:`see below for backwards compatibility information <buildtoolsbc>`.
 
